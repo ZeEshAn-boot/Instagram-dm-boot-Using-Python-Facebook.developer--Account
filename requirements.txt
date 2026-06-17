@@ -1,0 +1,28 @@
+def get_response(message):
+
+    msg = message.lower()
+
+    if "hello" in msg or "hi" in msg:
+        return "Welcome to ZAIQA Restaurant! How can we help?"
+
+    elif "menu" in msg:
+        return """
+Menu Categories:
+
+Desi Mains
+Grills & BBQ
+Burgers & Wraps
+Rice Dishes
+Deals & Combos
+Beverages & Desserts
+"""
+
+    elif "price" in msg:
+        return """
+Desi Mains: PKR 800-2500
+BBQ: PKR 600-1800
+Burgers: PKR 400-900
+"""
+
+    else:
+        return "Our team will contact you soon. Follow @zaiqaeats"
